@@ -1,0 +1,14 @@
+.bagbutton{
+    background-color: greenyellow;
+    border:none;
+    padding:5px,5px,15px,15px;
+    border-radius: 10px;
+
+}
+.wishbutton{
+    padding:5px,35px;
+    border:2px,solid,black;
+
+    border-radius:10px;
+
+}

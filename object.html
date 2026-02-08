@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>practice</title>
+</head>
+<body>
+    <script>
+        let product = {
+            company:'mango',
+            price:346,
+            item_name:'t-shirt',
+            rating:{
+                stars:4.8,
+                noOfreview:56
+            },
+            displayPrice:function() {
+                console.log(`price of the product is ${this.price}`)
+            }
+
+        };
+        product.displayPrice();
+        console.log(product);
+        console.log(product.company);
+        console.log(product.item_name)
+        console.log(product.price)
+        product.price=678;
+        console.log(product.price);
+        console.log(product);
+        let property_name = 'item_name';
+        console.log(product[property_name]);
+        console.log(product.property_name);
+        delete product.company;
+        console.log(product);
+        
+        
+    </script>
+    
+</body>
+</html>

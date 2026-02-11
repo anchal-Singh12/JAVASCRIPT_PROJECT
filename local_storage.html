@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>practice</title>
+</head>
+<body>
+    <script>
+        let product={
+            name:'shoe',
+            price:678,
+            color:'white',
+            size:5,
+
+        }
+        localStorage.setItem('Name','KG coding');
+        localStorage.setItem('price','4563')
+        console.log(localStorage.getItem('Name'));
+         console.log(localStorage.getItem('price'));
+        localStorage.setItem('product',JSON.stringify(product));
+         console.log(localStorage.getItem('product'))
+         let product2 = JSON.parse(localStorage.getItem('product'));
+         console.log(product2); 
+         localStorage.removeItem('price');
+         console.log(product2); 
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      // let sum= function(num1,num2){
+        //   return num1+num2;
+      //  }
+        //console.log(sum(23,78));
+        //SUM OF THREE NUMBER
+
+       // let sumOfthreeNum=function(num1,num2,num3,sumoftwo){
+        //   let sum = sumoftwo(num1,num2);
+         //   return sumoftwo(sum,num3)
+       // }
+       // console.log(sumOfthreeNum(3,6,7,sum))
+
+
+        //ARROW FUNCTION
+      //  let sum1 =(num1,num2)=>{
+         //   return num1+num2;
+
+       // }
+      /* let square=num=>{
+        return num*num;
+       }
+       console.log(square(6));
+       //OR
+
+       let cube=n=>n*n*n;
+       console.log(cube(7));*/
+       //SET TIMEOUT
+    let alarm=()=>
+        console.log(`get up .${new Date()}`);
+    
+    //setTimeout(alarm,5000);
+   // console.log('alarm set');
+   /*let timerId=setTimeout(alarm,1000);
+   console.log(`alarm set with timerId:${timerId}`);
+  clearTimeout(timerId);*/
+
+  //SET INTERVAL
+  
+  let intervalId=setInterval(alarm,1000)
+  setTimeout(()=>clearInterval(intervalId),5000);
+
+    </script>
+</body>
+</html>

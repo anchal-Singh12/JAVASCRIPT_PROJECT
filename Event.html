@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+</head>
+<body>
+   
+    <button id="my-button">click me</button>
+    <script>
+    let btnElement=document.querySelector('#my-button');
+    let behavior=event=>console.log('Iam clicked');
+    btnElement.addEventListener('click',behavior);
+    btnElement.removeEventListener('click',behavior);
+   </script> 
+</body>
+</html>
